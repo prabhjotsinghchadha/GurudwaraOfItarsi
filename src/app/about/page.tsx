@@ -4,8 +4,8 @@ import Image from 'next/image';
 import ContactCard from '@/components/about/contact-card';
 import GalleryGrid from '@/components/about/gallery-grid';
 import VisitInfo from '@/components/about/visit-info';
-import { Breadcrumbs } from '@/components/breadcrumbs';
-import { HeroBanner } from '@/components/hero-banner';
+import { Breadcrumbs } from '@/components/organisms/breadcrumbs';
+import { HeroBanner } from '@/components/organisms/hero-banner';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 export const metadata: Metadata = {
