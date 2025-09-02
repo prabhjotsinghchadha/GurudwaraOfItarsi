@@ -3,16 +3,19 @@
     "incremental": true, // https://nextjs.org/docs/basic-features/typescript#incremental-type-checking
     "baseUrl": ".",
     "paths": {
+      "@/*": ["./src/*"],
       "@/components/*": ["./src/components/*"],
       "@/pages/*": ["./src/pages/*"],
       "@/lib/*": ["./src/lib/*"],
       "@/hooks/*": ["./src/hooks/*"],
       "@/styles/*": ["./src/styles/*"],
+      "@/config/*": ["./src/config/*"],
       "@/mocks/*": ["./__mocks__/*"],
       "@/tests/*": ["./.jest/*"]
     },
-    "target": "es5",
+    "target": "es6",
     "lib": ["dom", "dom.iterable", "esnext"],
+    "types": ["node", "jest"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -31,5 +34,5 @@
     ]
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "functions"]
 }
